@@ -105,9 +105,8 @@ namespace BenhVienOffline.Data
         public static void ExecuteScript(string sqlScript)
         {
             using (var conn = GetConnection())
-            using (var cmd = new SQLiteCommand(conn))
+            using (var cmd = new SQLiteCommand(sqlScript, conn))
             {
-                cmd.CommandText = sqlScript;
                 cmd.ExecuteNonQuery();
             }
         }

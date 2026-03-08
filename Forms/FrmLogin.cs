@@ -9,7 +9,7 @@ using BenhVienOffline.Forms;
 
 namespace BenhVienOffline.Forms
 {
-    public class FrmLogin : Form
+    public partial class FrmLogin : Form
     {
         private ComboBox cmbUsers;
         private Button btnLogin;
