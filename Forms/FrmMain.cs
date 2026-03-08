@@ -84,7 +84,9 @@ namespace BenhVienOffline.Forms
 
         private void btnThuNgan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Mở module Thu ngân (sẽ hiện form FrmThuNganChonLoai).", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var f = new FrmThuNganChonLoai();
+            f.StartPosition = FormStartPosition.CenterParent;
+            f.ShowDialog(this);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
